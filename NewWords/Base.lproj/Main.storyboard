@@ -103,7 +103,7 @@
                                                 <color key="tintColor" white="0.01100127551" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFy-ZS-AbX">
-                                                <rect key="frame" x="135" y="63.5" width="4.5" height="20.5"/>
+                                                <rect key="frame" x="135" y="63.500000000000007" width="4.5" height="20.499999999999993"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
