@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viu-wR-qC5">
-                                        <rect key="frame" x="5" y="5" width="224" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="229" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -47,12 +47,12 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="p8k-MK-FZh" firstAttribute="leading" secondItem="viu-wR-qC5" secondAttribute="trailing" id="2dv-RT-Otw"/>
-                                    <constraint firstAttribute="bottom" secondItem="viu-wR-qC5" secondAttribute="bottom" constant="5" id="H57-G2-XQg"/>
+                                    <constraint firstAttribute="bottom" secondItem="viu-wR-qC5" secondAttribute="bottom" id="H57-G2-XQg"/>
                                     <constraint firstAttribute="trailing" secondItem="p8k-MK-FZh" secondAttribute="trailing" id="L8k-Yl-Mpj"/>
                                     <constraint firstItem="p8k-MK-FZh" firstAttribute="top" secondItem="tdN-ZF-0qB" secondAttribute="top" id="MI8-MX-Wiy"/>
                                     <constraint firstAttribute="bottom" secondItem="p8k-MK-FZh" secondAttribute="bottom" id="MmS-nt-3hh"/>
-                                    <constraint firstItem="viu-wR-qC5" firstAttribute="leading" secondItem="tdN-ZF-0qB" secondAttribute="leading" constant="5" id="Nfo-kR-ENQ"/>
-                                    <constraint firstItem="viu-wR-qC5" firstAttribute="top" secondItem="tdN-ZF-0qB" secondAttribute="top" constant="5" id="r1u-IO-itX"/>
+                                    <constraint firstItem="viu-wR-qC5" firstAttribute="leading" secondItem="tdN-ZF-0qB" secondAttribute="leading" id="Nfo-kR-ENQ"/>
+                                    <constraint firstItem="viu-wR-qC5" firstAttribute="top" secondItem="tdN-ZF-0qB" secondAttribute="top" id="r1u-IO-itX"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVT-zI-Kbr">
@@ -184,6 +184,7 @@
                     </view>
                     <connections>
                         <outlet property="resultLabel" destination="VFy-ZS-AbX" id="6go-Df-rfX"/>
+                        <outlet property="searchBar" destination="tdN-ZF-0qB" id="zaP-mH-fFo"/>
                         <outlet property="searchTextField" destination="viu-wR-qC5" id="OI3-bT-Jhv"/>
                         <outlet property="windowView" destination="xVT-zI-Kbr" id="JTU-8l-a1P"/>
                         <outletCollection property="relatedWordButtons" destination="uhe-ki-nhY" collectionClass="NSMutableArray" id="cig-Sq-6IP"/>

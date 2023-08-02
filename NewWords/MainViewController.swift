@@ -9,11 +9,6 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var windowView: UIView!
-    @IBOutlet var relatedWordButtons: [UIButton]!
-    
     enum NewWord: String, CaseIterable {
         case 중꺽마,오운완,그잡채,분좋카,완내스,킹받네,별다줄,알잘딱깔센
         
@@ -31,14 +26,21 @@ class MainViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var searchBar: UIView!
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var windowView: UIView!
+    @IBOutlet var relatedWordButtons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mapTagWithRelatedWordButtons()
         
-        designSearchTextField()
-        designWindowView()
-    
+        designSearchBar()
+        makeShadowAndCorner(view: windowView)
+        makeShadowAndCorner(view: searchBar)
+        
         settingRandomWordButtons()
     }
     
@@ -89,17 +91,17 @@ class MainViewController: UIViewController {
         }
     }
     
-    private func designSearchTextField() {
-        searchTextField.layer.borderWidth = 1
-        searchTextField.layer.borderColor = UIColor.black.cgColor
+    private func designSearchBar() {
+        searchBar.layer.borderWidth = 1
+        searchBar.layer.borderColor = UIColor.black.cgColor
     }
     
-    private func designWindowView() {
-        windowView.layer.cornerRadius = 5
-        windowView.layer.shadowColor = UIColor.black.cgColor
-        windowView.layer.shadowOffset = CGSize(width: 4, height: 4)
-        windowView.layer.shadowRadius = 5
-        windowView.layer.shadowOpacity = 0.5
+    private func makeShadowAndCorner(view: UIView) {
+        view.layer.cornerRadius = 5
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 4, height: 4)
+        view.layer.shadowRadius = 5
+        view.layer.shadowOpacity = 0.5
     }
     
     private func wrapResultLabelText(_ text: String?) -> String {
